@@ -8,25 +8,39 @@
 import SwURL
 import SwiftUI
 
+//enum Views: Int {
+//    case ob
+//    case laodImage
+//    static let count = 2
+//
+//    static func getView<T:View>(view: Int) -> T {
+//        switch view {
+//        case .ob:
+//            return OBView() as! T
+//        case .laodImage:
+//            return LoadImageView() as! T
+//        }
+//    }
+//}
+
 struct ContentView: View {
     
-    init() {
-        SwURL.setImageCache(type: .persistent)
-    }
+    private var views = [
+        AnyView(OBView()),
+        AnyView(LoadImageView()),
+        AnyView(MyActivityIndecator())
+    ]
+    private var titles = ["Onboarding", "Load Image", "ActivityIndecator"]
     
     var body: some View {
         NavigationView {
-            VStack {
-                RemoteImageView(url: URL(string: "https://iosacademy.io/assets/images/brand/icon.jpg")!, placeholderImage: Image(systemName: "house"), transition: .custom(transition: .opacity, animation: .easeIn(duration: 0.5)))
-                    .progress({ progress in
-                        Text("Loading \(progress)")
-                    })
-                    .aspectRatio(contentMode: .fit)
-                //                RemoteImageView(url: URL(string: "https://iosacademy.io/assets/images/brand/icon.jpg")!)
-//                    .aspectRatio(contentMode: .fit)
-                Text("Loadiong Image")
+            List {
+                ForEach(0 ..< views.count) { index in
+                    NavigationLink(destination: self.views[index]) {
+                        Text(self.titles[index])
+                    }
+                }
             }
-        .navigationBarTitle("Welcome!")
         }
     }
 }

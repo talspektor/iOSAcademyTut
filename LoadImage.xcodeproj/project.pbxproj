@@ -15,6 +15,11 @@
 		367A98D225B4270E0027BD29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367A98D025B4270E0027BD29 /* LaunchScreen.storyboard */; };
 		367A98DD25B4270E0027BD29 /* LoadImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367A98DC25B4270E0027BD29 /* LoadImageTests.swift */; };
 		367A98E925B4276D0027BD29 /* SwURL in Frameworks */ = {isa = PBXBuildFile; productRef = 367A98E825B4276D0027BD29 /* SwURL */; };
+		367A992225B4549C0027BD29 /* LoadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367A992125B4549C0027BD29 /* LoadImageView.swift */; };
+		367A992525B4554F0027BD29 /* OBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367A992425B4554F0027BD29 /* OBView.swift */; };
+		367A992825B456160027BD29 /* ConcentricOnboarding in Frameworks */ = {isa = PBXBuildFile; productRef = 367A992725B456160027BD29 /* ConcentricOnboarding */; };
+		367A992A25B460860027BD29 /* ActivityIndecator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367A992925B460860027BD29 /* ActivityIndecator.swift */; };
+		367A992E25B461780027BD29 /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 367A992D25B461780027BD29 /* ActivityIndicatorView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +44,9 @@
 		367A98D825B4270E0027BD29 /* LoadImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		367A98DC25B4270E0027BD29 /* LoadImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImageTests.swift; sourceTree = "<group>"; };
 		367A98DE25B4270E0027BD29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		367A992125B4549C0027BD29 /* LoadImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImageView.swift; sourceTree = "<group>"; };
+		367A992425B4554F0027BD29 /* OBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBView.swift; sourceTree = "<group>"; };
+		367A992925B460860027BD29 /* ActivityIndecator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndecator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				367A98E925B4276D0027BD29 /* SwURL in Frameworks */,
+				367A992E25B461780027BD29 /* ActivityIndicatorView in Frameworks */,
+				367A992825B456160027BD29 /* ConcentricOnboarding in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +91,9 @@
 		367A98C425B4270B0027BD29 /* LoadImage */ = {
 			isa = PBXGroup;
 			children = (
+				367A992B25B4608A0027BD29 /* ActivityIndetator */,
+				367A992325B455430027BD29 /* OB */,
+				367A992025B454830027BD29 /* LoadImage */,
 				367A98C525B4270B0027BD29 /* AppDelegate.swift */,
 				367A98C725B4270B0027BD29 /* SceneDelegate.swift */,
 				367A98C925B4270B0027BD29 /* ContentView.swift */,
@@ -109,6 +122,30 @@
 			path = LoadImageTests;
 			sourceTree = "<group>";
 		};
+		367A992025B454830027BD29 /* LoadImage */ = {
+			isa = PBXGroup;
+			children = (
+				367A992125B4549C0027BD29 /* LoadImageView.swift */,
+			);
+			path = LoadImage;
+			sourceTree = "<group>";
+		};
+		367A992325B455430027BD29 /* OB */ = {
+			isa = PBXGroup;
+			children = (
+				367A992425B4554F0027BD29 /* OBView.swift */,
+			);
+			path = OB;
+			sourceTree = "<group>";
+		};
+		367A992B25B4608A0027BD29 /* ActivityIndetator */ = {
+			isa = PBXGroup;
+			children = (
+				367A992925B460860027BD29 /* ActivityIndecator.swift */,
+			);
+			path = ActivityIndetator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,6 +164,8 @@
 			name = LoadImage;
 			packageProductDependencies = (
 				367A98E825B4276D0027BD29 /* SwURL */,
+				367A992725B456160027BD29 /* ConcentricOnboarding */,
+				367A992D25B461780027BD29 /* ActivityIndicatorView */,
 			);
 			productName = LoadImage;
 			productReference = 367A98C225B4270B0027BD29 /* LoadImage.app */;
@@ -180,6 +219,8 @@
 			mainGroup = 367A98B925B4270B0027BD29;
 			packageReferences = (
 				367A98E725B4276D0027BD29 /* XCRemoteSwiftPackageReference "SwURL" */,
+				367A992625B456160027BD29 /* XCRemoteSwiftPackageReference "ConcentricOnboarding" */,
+				367A992C25B461780027BD29 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
 			);
 			productRefGroup = 367A98C325B4270B0027BD29 /* Products */;
 			projectDirPath = "";
@@ -216,9 +257,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				367A992225B4549C0027BD29 /* LoadImageView.swift in Sources */,
 				367A98C625B4270B0027BD29 /* AppDelegate.swift in Sources */,
 				367A98C825B4270B0027BD29 /* SceneDelegate.swift in Sources */,
 				367A98CA25B4270B0027BD29 /* ContentView.swift in Sources */,
+				367A992A25B460860027BD29 /* ActivityIndecator.swift in Sources */,
+				367A992525B4554F0027BD29 /* OBView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +535,22 @@
 				minimumVersion = 0.4.0;
 			};
 		};
+		367A992625B456160027BD29 /* XCRemoteSwiftPackageReference "ConcentricOnboarding" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ConcentricOnboarding.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.5;
+			};
+		};
+		367A992C25B461780027BD29 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -498,6 +558,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 367A98E725B4276D0027BD29 /* XCRemoteSwiftPackageReference "SwURL" */;
 			productName = SwURL;
+		};
+		367A992725B456160027BD29 /* ConcentricOnboarding */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 367A992625B456160027BD29 /* XCRemoteSwiftPackageReference "ConcentricOnboarding" */;
+			productName = ConcentricOnboarding;
+		};
+		367A992D25B461780027BD29 /* ActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 367A992C25B461780027BD29 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */;
+			productName = ActivityIndicatorView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
