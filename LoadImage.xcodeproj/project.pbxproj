@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		367A98CF25B4270E0027BD29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 367A98CE25B4270E0027BD29 /* Preview Assets.xcassets */; };
 		367A98D225B4270E0027BD29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367A98D025B4270E0027BD29 /* LaunchScreen.storyboard */; };
 		367A98DD25B4270E0027BD29 /* LoadImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367A98DC25B4270E0027BD29 /* LoadImageTests.swift */; };
+		367A98E925B4276D0027BD29 /* SwURL in Frameworks */ = {isa = PBXBuildFile; productRef = 367A98E825B4276D0027BD29 /* SwURL */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				367A98E925B4276D0027BD29 /* SwURL in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +125,9 @@
 			dependencies = (
 			);
 			name = LoadImage;
+			packageProductDependencies = (
+				367A98E825B4276D0027BD29 /* SwURL */,
+			);
 			productName = LoadImage;
 			productReference = 367A98C225B4270B0027BD29 /* LoadImage.app */;
 			productType = "com.apple.product-type.application";
@@ -173,6 +178,9 @@
 				Base,
 			);
 			mainGroup = 367A98B925B4270B0027BD29;
+			packageReferences = (
+				367A98E725B4276D0027BD29 /* XCRemoteSwiftPackageReference "SwURL" */,
+			);
 			productRefGroup = 367A98C325B4270B0027BD29 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -473,6 +481,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		367A98E725B4276D0027BD29 /* XCRemoteSwiftPackageReference "SwURL" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cmtrounce/SwURL";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		367A98E825B4276D0027BD29 /* SwURL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 367A98E725B4276D0027BD29 /* XCRemoteSwiftPackageReference "SwURL" */;
+			productName = SwURL;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 367A98BA25B4270B0027BD29 /* Project object */;
 }
