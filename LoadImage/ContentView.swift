@@ -28,9 +28,10 @@ struct ContentView: View {
     private var views = [
         AnyView(OBView()),
         AnyView(LoadImageView()),
-        AnyView(MyActivityIndecator())
+        AnyView(MyActivityIndecator()),
+        AnyView(PopupView())
     ]
-    private var titles = ["Onboarding", "Load Image", "ActivityIndecator"]
+    private var titles = ["Onboarding", "Load Image", "ActivityIndecator", "PopopView"]
     
     var body: some View {
         NavigationView {

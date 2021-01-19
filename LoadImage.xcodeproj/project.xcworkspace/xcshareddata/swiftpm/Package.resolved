@@ -20,6 +20,15 @@
         }
       },
       {
+        "package": "PopupView",
+        "repositoryURL": "https://github.com/exyte/PopupView.git",
+        "state": {
+          "branch": null,
+          "revision": "fd37cca19583f784288dc3f1d22e9c5c69d6fd68",
+          "version": "0.0.10"
+        }
+      },
+      {
         "package": "SwURL",
         "repositoryURL": "https://github.com/cmtrounce/SwURL",
         "state": {

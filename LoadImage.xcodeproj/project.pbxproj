@@ -20,6 +20,9 @@
 		367A992825B456160027BD29 /* ConcentricOnboarding in Frameworks */ = {isa = PBXBuildFile; productRef = 367A992725B456160027BD29 /* ConcentricOnboarding */; };
 		367A992A25B460860027BD29 /* ActivityIndecator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367A992925B460860027BD29 /* ActivityIndecator.swift */; };
 		367A992E25B461780027BD29 /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 367A992D25B461780027BD29 /* ActivityIndicatorView */; };
+		367A993125B482C00027BD29 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367A993025B482C00027BD29 /* PopupView.swift */; };
+		367A993425B483880027BD29 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 367A993325B483880027BD29 /* PopupView */; };
+		367E640225B6AE9000EC0C43 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E640125B6AE9000EC0C43 /* LocationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,8 @@
 		367A992125B4549C0027BD29 /* LoadImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImageView.swift; sourceTree = "<group>"; };
 		367A992425B4554F0027BD29 /* OBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBView.swift; sourceTree = "<group>"; };
 		367A992925B460860027BD29 /* ActivityIndecator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndecator.swift; sourceTree = "<group>"; };
+		367A993025B482C00027BD29 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		367E640125B6AE9000EC0C43 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				367A993425B483880027BD29 /* PopupView in Frameworks */,
 				367A98E925B4276D0027BD29 /* SwURL in Frameworks */,
 				367A992E25B461780027BD29 /* ActivityIndicatorView in Frameworks */,
 				367A992825B456160027BD29 /* ConcentricOnboarding in Frameworks */,
@@ -91,6 +97,8 @@
 		367A98C425B4270B0027BD29 /* LoadImage */ = {
 			isa = PBXGroup;
 			children = (
+				367E640025B6AE7C00EC0C43 /* Geocoding */,
+				367A992F25B4829A0027BD29 /* Popups */,
 				367A992B25B4608A0027BD29 /* ActivityIndetator */,
 				367A992325B455430027BD29 /* OB */,
 				367A992025B454830027BD29 /* LoadImage */,
@@ -146,6 +154,22 @@
 			path = ActivityIndetator;
 			sourceTree = "<group>";
 		};
+		367A992F25B4829A0027BD29 /* Popups */ = {
+			isa = PBXGroup;
+			children = (
+				367A993025B482C00027BD29 /* PopupView.swift */,
+			);
+			path = Popups;
+			sourceTree = "<group>";
+		};
+		367E640025B6AE7C00EC0C43 /* Geocoding */ = {
+			isa = PBXGroup;
+			children = (
+				367E640125B6AE9000EC0C43 /* LocationView.swift */,
+			);
+			path = Geocoding;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +190,7 @@
 				367A98E825B4276D0027BD29 /* SwURL */,
 				367A992725B456160027BD29 /* ConcentricOnboarding */,
 				367A992D25B461780027BD29 /* ActivityIndicatorView */,
+				367A993325B483880027BD29 /* PopupView */,
 			);
 			productName = LoadImage;
 			productReference = 367A98C225B4270B0027BD29 /* LoadImage.app */;
@@ -221,6 +246,7 @@
 				367A98E725B4276D0027BD29 /* XCRemoteSwiftPackageReference "SwURL" */,
 				367A992625B456160027BD29 /* XCRemoteSwiftPackageReference "ConcentricOnboarding" */,
 				367A992C25B461780027BD29 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
+				367A993225B483880027BD29 /* XCRemoteSwiftPackageReference "PopupView" */,
 			);
 			productRefGroup = 367A98C325B4270B0027BD29 /* Products */;
 			projectDirPath = "";
@@ -257,6 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				367A993125B482C00027BD29 /* PopupView.swift in Sources */,
+				367E640225B6AE9000EC0C43 /* LocationView.swift in Sources */,
 				367A992225B4549C0027BD29 /* LoadImageView.swift in Sources */,
 				367A98C625B4270B0027BD29 /* AppDelegate.swift in Sources */,
 				367A98C825B4270B0027BD29 /* SceneDelegate.swift in Sources */,
@@ -551,6 +579,14 @@
 				minimumVersion = 0.0.6;
 			};
 		};
+		367A993225B483880027BD29 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.10;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -568,6 +604,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 367A992C25B461780027BD29 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */;
 			productName = ActivityIndicatorView;
+		};
+		367A993325B483880027BD29 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 367A993225B483880027BD29 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
